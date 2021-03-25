@@ -72,5 +72,5 @@ build_script:
   - c:\cygwin\bin\sh -lc "(cd $OLDPWD; make)"
   - c:\cygwin\bin\sh -lc "(cd $OLDPWD; find .)"
 after_build:
-  - ps: Push-AppveyorArtifact "C:\projects\libffi\aarch64-w64-cygwin\.libs\libffi.lib" -FileName libffi.lib }
+  - ps: Push-AppveyorArtifact "C:\projects\libffi\aarch64-w64-cygwin\.libs\libffi.lib" -FileName libffi.lib
  
