@@ -77,4 +77,4 @@ after_build:
   - ps: Push-AppveyorArtifact "C:\projects\libffi\aarch64-w64-cygwin\.libs\libffi.lib" -FileName libffi.lib }
   
 on_finish:
-  - c:\cygwin\bin\sh -lc "(cd $OLDPWD; cat `find ./ -name libffi.log`)"
+  - c:\cygwin\bin\sh -lc "(cd $OLDPWD; cat `find ./ -name config.log`)"
